@@ -24,3 +24,10 @@ https://phpstan.org/config-reference　を参考に。
 6. パフォーマンスの最適化
 7. Laravel固有のチェック
 
+参考：https://qiita.com/aosan/items/420e339d4b5941aac048#51-larastan%E3%81%A8%E3%81%AF
+
+## Laravel Debugbar
+Laravel Debugbarは、デバッグ情報をブラウザ上に表示するツールで、SQLクエリやビュー、リクエストの情報などをリアルタイムで確認できる
+
+参考：https://www.itsolutionstuff.com/post/laravel-11-install-and-configure-laravel-debugbarexample.html
+
