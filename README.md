@@ -31,3 +31,15 @@ Laravel Debugbarは、デバッグ情報をブラウザ上に表示するツー�
 
 参考：https://www.itsolutionstuff.com/post/laravel-11-install-and-configure-laravel-debugbarexample.html
 
+
+## PHP CS Fixer
+コードスタイルを整えてくれるツールです。
+プロジェクト内で一貫したコードスタイルを保つために非常に有用で、コードの可読性や保守性が向上します。PSR-2やPSR-12などの標準に基づいてコードを整形できます。
+
+```
+./vendor/bin/php-cs-fixer fix app --config=.php-cs-fixer.dist.php
+```
+
+自動的にするには、
+.git/hooksに『pre-commit』を作成し、php-cs-fixer を実行するコマンドを記述すればOK。
+
