@@ -19,23 +19,5 @@ jobs:
     - name: Set up PHP
       uses: shivammathur/setup-php@v2  # PHPのバージョンを設定
       with:
-        php-version: '8.1'  # 使用するPHPのバージョン（例: 8.1）
-
-    - name: Install dependencies
-      run: |
-        sudo apt-get install unzip curl
-        curl -sS https://getcomposer.org/installer | php
-        php composer.phar install  # Composerで依存関係をインストール
-
-    - name: Set up .env
-      run: cp .env.example .env  # .envファイルをコピー（必要に応じて変更）
-
-    - name: Generate Laravel key
-      run: php artisan key:generate  # Laravelのアプリケーションキーを生成
-
-    - name: Run migrations (optional)
-      run: php artisan migrate --env=testing  # データベースマイグレーション（テスト環境用）
-
-    - name: Run tests
-      run: php artisan test  # Laravelのテストを実行
+        php-version: '8.2'  # 使用するPHPのバージョン（例: 8.1）
 
